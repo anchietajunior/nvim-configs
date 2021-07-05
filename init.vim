@@ -16,6 +16,7 @@ Plug 'tpope/vim-endwise'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'mhinz/vim-signify'
 
 call plug#end()
 
@@ -64,11 +65,31 @@ nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
 nmap <leader>4 <Plug>AirlineSelectTab4
 nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader><Right> :bnext<CR>
+nmap <leader><Left> :bprevious<CR>
 
 " RSpec.vim mappings
 map <Leader>tf :call RunCurrentSpecFile()<CR>
 map <Leader>tn :call RunNearestSpec()<CR>
 map <Leader>ta :call RunAllSpecs()<CR>
+
+" Vim-Signify
+
+" Change these if you want
+let g:signify_sign_add               = '+'
+let g:signify_sign_delete            = '_'
+let g:signify_sign_delete_first_line = '‾'
+let g:signify_sign_change            = '~'
+
+" I find the numbers disctracting
+let g:signify_sign_show_count = 0
+let g:signify_sign_show_text = 1
+
+" Jump though hunks
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)
+nmap <leader>gJ 9999<leader>gJ
+nmap <leader>gK 9999<leader>gk
 
 let g:webdevicons_enable = 1
 let g:NERDTreeShowBookmarks=1
