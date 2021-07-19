@@ -4,6 +4,7 @@ Plug 'preservim/nerdtree'
 " Use release branch (recommend)
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
+Plug 'monsonjeremy/onedark.nvim'
 Plug '9mm/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'rakr/vim-one'
@@ -21,6 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
@@ -33,6 +35,7 @@ set number
 set termguicolors
 set background=dark
 colorscheme gruvbox
+" colorscheme onedark
 set mouse=a
 set tabstop=2
 set shiftwidth=2
@@ -172,20 +175,17 @@ vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 EOF
 
-
-" set guifont=Fira\ Code:h20
-set guifont=Fira_Code_Nerd_Font:h16
-
 let mapleader=','
 
 " General
 nmap <leader>z :u<CR>
 nmap <leader>Q :qa!<CR>
-nmap <leader>q :q<CR>
+nmap <leader>q :bw<CR>
 
 " NERDTree
 nnoremap <leader>. :NERDTreeFocus<CR>
-nnoremap <leader>b :NERDTreeToggle<CR>
+nnoremap <leader>/ :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 " Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<CR>
@@ -194,13 +194,8 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 
 " AirLine
 let g:airline#extensions#tabline#enabled = 1
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader><Right> :bnext<CR>
-nmap <leader><Left> :bprevious<CR>
+nmap <leader>2 :bnext<CR>
+nmap <leader>1 :bprevious<CR>
 let g:airline_powerline_fonts = 1
 
 " RSpec.vim mappings
