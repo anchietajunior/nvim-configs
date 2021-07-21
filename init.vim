@@ -22,6 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'janko-m/vim-test'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/vim-vsnip'
 Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
