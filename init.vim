@@ -6,6 +6,7 @@ Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'monsonjeremy/onedark.nvim'
 Plug '9mm/vim-closer'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'rakr/vim-one'
 Plug 'nvim-lua/popup.nvim'
@@ -37,6 +38,8 @@ set termguicolors
 set background=dark
 colorscheme gruvbox
 " colorscheme onedark
+set wrap
+set linebreak
 set mouse=a
 set tabstop=2
 set shiftwidth=2
