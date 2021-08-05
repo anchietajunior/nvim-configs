@@ -1,0 +1,27 @@
+call plug#begin()
+
+Plug 'preservim/nerdtree'
+Plug 'morhetz/gruvbox'
+Plug 'monsonjeremy/onedark.nvim'
+Plug '9mm/vim-closer'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-commentary'
+Plug 'rakr/vim-one'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'mhinz/vim-signify'
+Plug 'vim-test/vim-test'
+Plug 'neovim/nvim-lspconfig'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'elixir-editors/vim-elixir'
+
+call plug#end()
