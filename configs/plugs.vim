@@ -23,5 +23,6 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'elixir-editors/vim-elixir'
+Plug 'skywind3000/vim-quickui'
 
 call plug#end()

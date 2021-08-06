@@ -8,7 +8,7 @@ nnoremap <silent> <C-z> :u<CR>
 " Close Neovim
 nnoremap <silent> <C-q> :qa!<CR>
 " Close buffer
-nmap <leader>w :bw<CR>
+nmap <leader>q :bw<CR>
 " Copy to clipboard
 nnoremap <silent> <C-c> :"*y<CR>
 
@@ -16,7 +16,7 @@ nnoremap <silent> <C-c> :"*y<CR>
 nnoremap <silent> ;; <cmd>lua require'lspsaga.provider'.preview_definition()<CR>
 nnoremap <silent> K <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
-nnoremap <silent> <leader>;l <cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
+nnoremap <silent> ;l <cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
 nnoremap <silent> <leader>;c <cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>
 nnoremap <silent> [e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>
 nnoremap <silent> ]e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>
@@ -52,3 +52,6 @@ nmap <leader>gK 9999<leader>gk
 nmap <silent> <leader>tn :TestNearest<CR>
 nmap <silent> <leader>tf :TestFile<CR>
 nmap <silent> <leader>ts :TestSuite<CR>
+
+" QuickUI
+noremap <space><space> :call quickui#menu#open()<cr>

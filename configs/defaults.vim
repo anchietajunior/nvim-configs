@@ -49,3 +49,17 @@ let g:NERDTreeStatusline = ''
 
 " Vim-test
 let test#strategy = "neovim"
+
+" QuickUI
+let g:quickui_color_scheme = 'gruvbox'
+" install a 'File' menu, use [text, command] to represent an item.
+call quickui#menu#install('&File', [
+            \ [ "&Buffers", 'Telescope buffers' ],
+            \ [ "&Show File in NERDTree", ':NERDTreeFind' ],
+            \ [ "&Close File", ':bw' ],
+            \ [ "--", '' ],
+            \ [ "&Find Files", 'Telescope find_files' ],
+            \ [ "&Find in Files", 'Telescope live_grep' ],
+            \ [ "--", '' ],
+            \ [ "E&xit", ':qa!' ],
+            \ ])
