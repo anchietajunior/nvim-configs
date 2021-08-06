@@ -2,6 +2,10 @@
 
 ![Screen Shot 2021-07-04 at 21 21 07](https://user-images.githubusercontent.com/8007754/124403641-c9823880-dd0d-11eb-8b67-e3103e570637.png)
 
+## LSP
+
+If you want to use the new LSP configurations, check out the [other branch](https://github.com/anchietajunior/nvim-configs/tree/add-lsp).
+
 ## Plugins manager
 
 Vim-Plug
