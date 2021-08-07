@@ -10,7 +10,10 @@ nnoremap <silent> <C-q> :qa!<CR>
 " Close buffer
 nmap <leader>q :bw<CR>
 " Copy to clipboard
-nnoremap <silent> <C-c> :"*y<CR>
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
 
 " LSP Saga
 nnoremap <silent> ;; <cmd>lua require'lspsaga.provider'.preview_definition()<CR>

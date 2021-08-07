@@ -1,3 +1,4 @@
+set clipboard=unnamedplus
 set encoding=UTF-8
 syntax on
 set t_Co=16
