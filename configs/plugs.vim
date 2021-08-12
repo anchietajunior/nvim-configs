@@ -2,7 +2,7 @@ call plug#begin()
 
 Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
-Plug 'monsonjeremy/onedark.nvim'
+Plug 'joshdick/onedark.vim'
 Plug '9mm/vim-closer'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
@@ -21,8 +21,10 @@ Plug 'vim-test/vim-test'
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
+Plug 'kabouzeid/nvim-lspinstall'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'elixir-editors/vim-elixir'
 Plug 'skywind3000/vim-quickui'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()

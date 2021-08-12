@@ -7,18 +7,18 @@ set ruler
 set number
 set termguicolors
 set background=dark
-colorscheme gruvbox
-" colorscheme onedark maybe in the future
+" colorscheme gruvbox
+colorscheme onedark
 set wrap
 set linebreak
 set mouse=a
 set tabstop=2
 set shiftwidth=2
-highlight Cursor guifg=white guibg=black
+highlight Cursor guifg=white guibg=steelblue
 highlight iCursor guifg=white guibg=steelblue
 set guicursor=n-v-c:block-Cursor
 set guicursor+=i:ver100-iCursor
-set guicursor+=n-v-c:blinkon0
+set guicursor+=n-v-c:blinkon10
 set guicursor+=i:blinkwait10
 
 " Airline
