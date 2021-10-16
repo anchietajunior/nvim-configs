@@ -8,6 +8,7 @@ set number
 set termguicolors
 set background=dark
 colorscheme gruvbox
+hi Normal ctermbg=NONE guibg=NONE
 " colorscheme onedark
 " colorscheme monokai
 set wrap
