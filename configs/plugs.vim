@@ -1,6 +1,10 @@
 call plug#begin()
 
+Plug 'mhinz/vim-startify'
+Plug 'romgrk/barbar.nvim'
+Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
+Plug 'tanvirtin/monokai.nvim'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug '9mm/vim-closer'
@@ -16,6 +20,7 @@ Plug 'tpope/vim-endwise'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-signify'
 Plug 'vim-test/vim-test'
 Plug 'neovim/nvim-lspconfig'
@@ -26,5 +31,4 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'elixir-editors/vim-elixir'
 Plug 'skywind3000/vim-quickui'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-
 call plug#end()

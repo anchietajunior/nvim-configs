@@ -13,8 +13,10 @@ source $HOME/.config/nvim/configs/compe.vim
 " Mappings
 source $HOME/.config/nvim/configs/mappings.vim
 
+
 " Starting options
 autocmd VimEnter * NERDTree | wincmd p
+autocmd BufEnter NERD_tree_* | execute 'normal R'
 autocmd BufWritePre *.rb lua vim.lsp.buf.formatting_sync(nil, 100)
 
 

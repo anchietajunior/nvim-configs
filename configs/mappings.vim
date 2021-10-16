@@ -27,8 +27,8 @@ nnoremap <silent><leader>ca :Lspsaga code_action<CR>
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 
 " NERDTree
-nnoremap <leader>. :NERDTreeFocus<CR>
-nnoremap <leader>/ :NERDTreeToggle<CR>
+nmap \ :NERDTreeFocus<CR>
+nmap / :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 
 " Telescope
