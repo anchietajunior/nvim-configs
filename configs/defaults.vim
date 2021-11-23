@@ -7,10 +7,10 @@ set ruler
 set number
 set termguicolors
 set background=dark
-colorscheme gruvbox
+"colorscheme gruvbox
 hi Normal ctermbg=NONE guibg=NONE
 " colorscheme onedark
-" colorscheme monokai
+colorscheme monokai
 set wrap
 set linebreak
 set mouse=a
@@ -67,3 +67,6 @@ call quickui#menu#install('&File', [
             \ [ "--", '' ],
             \ [ "E&xit", ':qa!' ],
             \ ])
+
+let g:fold_rspec_foldenable = 0
+let g:fold_rspec_foldlevel = 2

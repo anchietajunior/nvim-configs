@@ -27,18 +27,17 @@ nnoremap <silent><leader>ca :Lspsaga code_action<CR>
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 
 " NERDTree
-nmap \ :NERDTreeFocus<CR>
-nmap / :NERDTreeToggle<CR>
+nnoremap <leader>/ :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 
 " Telescope
-nnoremap <leader>ff <cmd>Telescope find_files<CR>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>f <cmd>Telescope find_files<CR>
+nnoremap <leader>g <cmd>Telescope live_grep<cr>
+nnoremap <leader>b <cmd>Telescope buffers<cr>
 
 " AirLine
-nmap <leader>2 :bnext<CR>
-nmap <leader>1 :bprevious<CR>
+nmap <leader>2 :tabnext<CR>
+nmap <leader>1 :tabprevious<CR>
 
 " RSpec.vim mappings
 " map <Leader>tf :call RunCurrentSpecFile()<CR>

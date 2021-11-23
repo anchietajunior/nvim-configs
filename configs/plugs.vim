@@ -1,6 +1,5 @@
 call plug#begin()
 
-Plug 'mhinz/vim-startify'
 Plug 'romgrk/barbar.nvim'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
@@ -23,6 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-signify'
 Plug 'vim-test/vim-test'
+Plug 'rlue/vim-fold-rspec'
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
