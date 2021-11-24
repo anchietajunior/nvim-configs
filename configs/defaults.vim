@@ -7,10 +7,10 @@ set ruler
 set number
 set termguicolors
 set background=dark
-"colorscheme gruvbox
+colorscheme gruvbox
+"colorscheme monokai
 hi Normal ctermbg=NONE guibg=NONE
 " colorscheme onedark
-colorscheme monokai
 set wrap
 set linebreak
 set mouse=a
