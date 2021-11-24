@@ -36,8 +36,10 @@ nnoremap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>b <cmd>Telescope buffers<cr>
 
 " AirLine
-nmap <leader>2 :tabnext<CR>
-nmap <leader>1 :tabprevious<CR>
+nmap <leader>9 :blast
+nmap <leader>0 :bfirst
+nmap <leader>2 :bnext<CR>
+nmap <leader>1 :bprevious<CR>
 
 " RSpec.vim mappings
 " map <Leader>tf :call RunCurrentSpecFile()<CR>
