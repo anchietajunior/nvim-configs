@@ -16,6 +16,8 @@ nnoremap  <leader>y  "+y
 nnoremap  <leader>yy  "+yy
 
 " LSP Saga
+nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> ;; <cmd>lua require'lspsaga.provider'.preview_definition()<CR>
 nnoremap <silent> K <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>

@@ -7,10 +7,14 @@ set ruler
 set number
 set termguicolors
 set background=dark
-colorscheme gruvbox
+
+" Themes
+"colorscheme melange
 "colorscheme monokai
+"colorscheme gruvbox
+"colorscheme onedark
+colorscheme gruvbox-material
 hi Normal ctermbg=NONE guibg=NONE
-" colorscheme onedark
 set wrap
 set linebreak
 set mouse=a
@@ -22,7 +26,6 @@ set guicursor=n-v-c:block-Cursor
 set guicursor+=i:ver100-iCursor
 set guicursor+=n-v-c:blinkon10
 set guicursor+=i:blinkwait10
-
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1

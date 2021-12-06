@@ -7,6 +7,9 @@ source $HOME/.config/nvim/configs/defaults.vim
 " Import lsp configurations
 source $HOME/.config/nvim/configs/lsp.vim
 
+" Telescope
+source $HOME/.config/nvim/configs/telescope.vim
+
 " Compe
 source $HOME/.config/nvim/configs/compe.vim
 
