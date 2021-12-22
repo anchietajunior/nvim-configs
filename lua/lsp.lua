@@ -1,4 +1,3 @@
-lua << EOF
 require'lspconfig'.solargraph.setup{}
 
 local nvim_lsp = require('lspconfig')
@@ -26,4 +25,3 @@ for _, lsp in ipairs(servers) do
 	}
 }
 end
-EOF

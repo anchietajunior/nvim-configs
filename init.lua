@@ -1,0 +1,6 @@
+require('plugs')
+require('defaults')
+require('lsp')
+require('theme')
+require('airline')
+require('maps')
