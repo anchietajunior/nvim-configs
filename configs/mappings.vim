@@ -21,7 +21,9 @@ nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> ;; <cmd>lua require'lspsaga.provider'.preview_definition()<CR>
 nnoremap <silent> K <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
+
 nnoremap <silent> ;l <cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
+
 nnoremap <silent> <leader>;c <cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>
 nnoremap <silent> [e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>
 nnoremap <silent> ]e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>
@@ -38,10 +40,11 @@ nnoremap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>b <cmd>Telescope buffers<cr>
 
 " AirLine
-nmap <leader>9 :blast
-nmap <leader>0 :bfirst
-nmap <leader>2 :bnext<CR>
-nmap <leader>1 :bprevious<CR>
+nmap <leader>9 :BufferLast<CR>
+nmap <leader>0 :BufferCloseAllButCurrent<CR>
+nmap <leader>2 :BufferNext<CR>
+nmap <leader>1 :BufferPrevious<CR>
+nmap <leader>bd :BufferClose<CR>
 
 " RSpec.vim mappings
 " map <Leader>tf :call RunCurrentSpecFile()<CR>

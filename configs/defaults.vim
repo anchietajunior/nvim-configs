@@ -6,15 +6,16 @@ syntax enable
 set ruler
 set number
 set termguicolors
-set background=dark
 
-" Themes
-"colorscheme melange
-"colorscheme monokai
-"colorscheme gruvbox
+let g:material_style='palenight'
+" let g:material_style='oceanic'
+set background=dark
+let g:one_allow_italics = 1
+colorscheme one
+" colorscheme gruvbox
 "colorscheme onedark
-colorscheme gruvbox-material
-hi Normal ctermbg=NONE guibg=NONE
+" colorscheme gruvbox-material
+" hi Normal ctermbg=NONE guibg=NONE
 set wrap
 set linebreak
 set mouse=a
@@ -30,6 +31,8 @@ set guicursor+=i:blinkwait10
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme='one'
+" let g:airline_theme='material'
 
 " Signify
 let g:signify_sign_add               = '+'

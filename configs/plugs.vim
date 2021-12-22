@@ -1,5 +1,7 @@
 call plug#begin()
 
+Plug 'hzchirs/vim-material'
+Plug 'romgrk/barbar.nvim'
 Plug 'romgrk/barbar.nvim'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
@@ -27,7 +29,7 @@ Plug 'mhinz/vim-signify'
 Plug 'vim-test/vim-test'
 Plug 'rlue/vim-fold-rspec'
 Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim'
+Plug 'tami5/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
 Plug 'kabouzeid/nvim-lspinstall'
 Plug 'hrsh7th/vim-vsnip'
