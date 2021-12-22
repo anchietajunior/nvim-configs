@@ -22,14 +22,29 @@ require('packer').startup(function()
     'neovim/nvim-lspconfig',
     'williamboman/nvim-lsp-installer',
 	}
-  use 'glepnir/lspsaga.nvim'
-  use 'hrsh7th/nvim-compe'
+
+  use 'tami5/lspsaga.nvim'
+  use 'hrsh7th/nvim-compe' -- compe
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'scrooloose/nerdcommenter' -- commenting shortcuts
   use 'kyazdani42/nvim-web-devicons'
   use 'tpope/vim-surround'
   use 'rakr/vim-one'
   use 'navarasu/onedark.nvim'
+
+  use 'preservim/nerdtree'
+  use 'mhinz/vim-signify'
+  use 'romgrk/barbar.nvim'
+  use 'ryanoasis/vim-devicons'
+
+  -- ruby
+  use { 'tpope/vim-rails', ft = 'ruby' }
+  use { 'ecomba/vim-ruby-refactoring', ft = 'ruby' }
+  use { 'tpope/vim-haml', ft = 'ruby' }
+
+   -- testing
+  use 'kassio/neoterm' -- terminal wrapper
+  use 'janko-m/vim-test' -- testing commands
 
   require'nvim-treesitter.configs'.setup {
     highlight = {
