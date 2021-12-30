@@ -1,5 +1,9 @@
 -- THEME
 vim.opt.background='dark'
 -- vim.g.onedark_style = 'darker'
-vim.cmd('colorscheme onedark')
-vim.g.one_allow_italics = 1
+-- g:gruvbox_contrast_dark
+-- vim.g.gruvbox_contrast_dark = 'hard'
+ -- vim.cmd('colorscheme gruvbox')
+--require('monokai').setup { }
+--vim.g.airline_theme = 'onedark'
+vim.cmd("colorscheme kanagawa")

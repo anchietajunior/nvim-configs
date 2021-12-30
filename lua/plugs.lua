@@ -7,6 +7,7 @@ require('packer').startup(function()
   use 'vim-airline/vim-airline-themes' -- airline
   use 'rhysd/vim-grammarous' -- grammar check
   use 'bronson/vim-trailing-whitespace' -- highlight trailing spaces
+  use 'rstacruz/vim-closer'
 
   use { 'lewis6991/gitsigns.nvim', -- git added/removed in sidebar + inline blame
     requires = { 'nvim-lua/plenary.nvim' },
@@ -29,18 +30,19 @@ require('packer').startup(function()
   use 'scrooloose/nerdcommenter' -- commenting shortcuts
   use 'kyazdani42/nvim-web-devicons'
   use 'tpope/vim-surround'
-  use 'rakr/vim-one'
-  use 'navarasu/onedark.nvim'
+	use 'morhetz/gruvbox'
+  use "rebelot/kanagawa.nvim"
 
   use 'preservim/nerdtree'
+  use 'Xuyuanp/nerdtree-git-plugin'
   use 'mhinz/vim-signify'
-  use 'romgrk/barbar.nvim'
   use 'ryanoasis/vim-devicons'
 
+
   -- ruby
-  use { 'tpope/vim-rails', ft = 'ruby' }
-  use { 'ecomba/vim-ruby-refactoring', ft = 'ruby' }
-  use { 'tpope/vim-haml', ft = 'ruby' }
+  use 'tpope/vim-rails'
+  use 'ecomba/vim-ruby-refactoring'
+  use 'tpope/vim-endwise'
 
    -- testing
   use 'kassio/neoterm' -- terminal wrapper
@@ -81,6 +83,10 @@ require('packer').startup(function()
 	 default = true;
 	}
 
+	use 'romgrk/barbar.nvim'
+
   -- search
   use { 'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
+
+	use 'SirVer/ultisnips'
 end)
