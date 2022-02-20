@@ -15,8 +15,8 @@ vim.api.nvim_set_keymap('v', '<leader>d', '"_d', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>kk', 'i# frozen_string_literal: true<CR><Esc>', { noremap = true })
 
 -- NERDTREE
-vim.api.nvim_set_keymap('n', '<leader>.', ':NERDTreeToggle<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>/', ':NERDTreeFind<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader> ', ':NERDTreeToggle<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>.', ':NERDTreeFind<CR>', { noremap = true })
 
 -- LSP
 vim.api.nvim_set_keymap('n', 'gd', 'lua vim.lsp.buf.definition()<CR>', { noremap = true })

@@ -6,10 +6,12 @@ require('nerdtree')
 require('devicons')
 require('airline')
 require('signify')
+require('folding')
 require('ulti')
 require('autocomplete')
 require('test')
 require('maps')
 
+-- This is a comment
 vim.cmd('autocmd BufWritePre *.rb lua vim.lsp.buf.formatting_sync(nil, 5000)')
 vim.cmd('autocmd VimEnter * NERDTree | wincmd p')

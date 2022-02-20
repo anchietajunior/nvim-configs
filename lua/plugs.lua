@@ -31,7 +31,7 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'tpope/vim-surround'
 	use 'morhetz/gruvbox'
-  use "rebelot/kanagawa.nvim"
+  --use "rebelot/kanagawa.nvim"
 
   use 'preservim/nerdtree'
   use 'Xuyuanp/nerdtree-git-plugin'
@@ -47,6 +47,7 @@ require('packer').startup(function()
    -- testing
   use 'kassio/neoterm' -- terminal wrapper
   use 'janko-m/vim-test' -- testing commands
+	use 'rlue/vim-fold-rspec' -- folding rspec
 
   require'nvim-treesitter.configs'.setup {
     highlight = {
