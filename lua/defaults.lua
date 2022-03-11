@@ -16,4 +16,3 @@ vim.opt.shiftwidth=2
 vim.cmd('highlight VertSplit ctermbg=NONE')
 vim.opt.showtabline=2
 vim.opt.termguicolors=true
-vim.opt.foldmethod = 'syntax'

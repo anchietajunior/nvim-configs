@@ -8,6 +8,7 @@ require('packer').startup(function()
   use 'rhysd/vim-grammarous' -- grammar check
   use 'bronson/vim-trailing-whitespace' -- highlight trailing spaces
   use 'rstacruz/vim-closer'
+	use 'sheerun/vim-polyglot'
 
   use { 'lewis6991/gitsigns.nvim', -- git added/removed in sidebar + inline blame
     requires = { 'nvim-lua/plenary.nvim' },
@@ -37,7 +38,7 @@ require('packer').startup(function()
   use 'Xuyuanp/nerdtree-git-plugin'
   use 'mhinz/vim-signify'
   use 'ryanoasis/vim-devicons'
-
+  use 'ntpeters/vim-better-whitespace'
 
   -- ruby
   use 'tpope/vim-rails'
@@ -47,7 +48,6 @@ require('packer').startup(function()
    -- testing
   use 'kassio/neoterm' -- terminal wrapper
   use 'janko-m/vim-test' -- testing commands
-	use 'rlue/vim-fold-rspec' -- folding rspec
 
   require'nvim-treesitter.configs'.setup {
     highlight = {

@@ -7,6 +7,9 @@ vim.api.nvim_set_keymap('n', '<leader>bu', [[<cmd>Telescope live_grep<cr>]], { n
 -- turn off search highlighting
 vim.api.nvim_set_keymap('n', '<leader>nh', ':nohlsearch<cr>', { noremap = true })
 
+-- strip whitespaces
+vim.api.nvim_set_keymap('n', '<leader> ', ':StripWhitespace<cr>', { noremap = true })
+
 -- delete text without yanking
 vim.api.nvim_set_keymap('n', '<leader>d', '"_d', { noremap = true })
 vim.api.nvim_set_keymap('v', '<leader>d', '"_d', { noremap = true })
@@ -15,7 +18,7 @@ vim.api.nvim_set_keymap('v', '<leader>d', '"_d', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>kk', 'i# frozen_string_literal: true<CR><Esc>', { noremap = true })
 
 -- NERDTREE
-vim.api.nvim_set_keymap('n', '<leader> ', ':NERDTreeToggle<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>/', ':NERDTreeToggle<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>.', ':NERDTreeFind<CR>', { noremap = true })
 
 -- LSP
