@@ -1,0 +1,39 @@
+snippet rspc "RSpec describe Something"
+RSpec.describe ${1:ClassName} do
+	$2
+end
+endsnippet
+
+snippet it "It Rspec Test"
+it '${1:does something}' do
+	$2
+	expect(subject).to eq true
+end
+endsnippet
+
+snippet desc "Describe Rspec Test"
+describe '#${1:describe a object method}' do
+end
+endsnippet
+
+snippet ctx "Context RSpec Test"
+context 'Some context$1' do
+end
+endsnippet
+
+snippet fsl "Frozen String Literal Comment"
+# frozen_string_literal: true
+endsnippet
+
+snippet class "Create a class"
+class ${1:ClassName}
+	def initialize(${2:args})
+		@$2 = $2
+	end
+end
+endsnippet
+
+snippet def "Create a method"
+def ${1:name_of_the_method}(${2:args})
+end
+endsnippet

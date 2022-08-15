@@ -1,0 +1,16 @@
+require('plugs')
+require('defaults')
+require('theme')
+require('lsp')
+require('nerdtree')
+require('devicons')
+require('airline')
+require('signify')
+require('ulti')
+require('autocomplete')
+require('test')
+require('maps')
+
+-- This is a comment
+vim.cmd('autocmd BufWritePre *.rb lua vim.lsp.buf.formatting_sync(nil, 5000)')
+vim.cmd('autocmd VimEnter * NERDTree | wincmd p')
