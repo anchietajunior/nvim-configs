@@ -27,11 +27,11 @@ require('packer').startup(function()
 
   use 'tami5/lspsaga.nvim'
   use 'hrsh7th/nvim-compe' -- compe
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'scrooloose/nerdcommenter' -- commenting shortcuts
   use 'kyazdani42/nvim-web-devicons'
   use 'tpope/vim-surround'
 	use 'morhetz/gruvbox'
+  use 'Mofiqul/dracula.nvim'
   --use "rebelot/kanagawa.nvim"
 
   use 'preservim/nerdtree'
@@ -49,10 +49,12 @@ require('packer').startup(function()
   use 'kassio/neoterm' -- terminal wrapper
   use 'janko-m/vim-test' -- testing commands
 
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+
   require'nvim-treesitter.configs'.setup {
     highlight = {
-      enable = true,
-      disable = { "ruby" }
+     enable = true,
+     disable = { "ruby" }
     }
   }
 
