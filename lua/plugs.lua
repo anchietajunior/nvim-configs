@@ -49,14 +49,14 @@ require('packer').startup(function()
   use 'kassio/neoterm' -- terminal wrapper
   use 'janko-m/vim-test' -- testing commands
 
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  --use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
-  require'nvim-treesitter.configs'.setup {
-    highlight = {
-     enable = true,
-     disable = { "ruby" }
-    }
-  }
+  --require'nvim-treesitter.configs'.setup {
+    --highlight = {
+     --enable = true,
+     --disable = { "ruby" }
+    --}
+  --}
 
   require'lspsaga'.init_lsp_saga {
     error_sign = '!',
